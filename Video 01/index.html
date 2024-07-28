@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Reflection and Shadow Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            margin: 0;
+        }
+        .text {
+            font-size: 48px;
+            color: #03e914;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            box-shadow: 0 0 5px #03e914, 0 0 15px #03e914, 0 0 25px #03e914, 0 0 100px #03e914;
+            border-radius: 5px;
+        }
+        .text:hover {
+            font-size: 48px;
+            color: #000000;
+            background-color: #03e914;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #03e914);
+            box-shadow: 0 0 5px #03e914, 0 0 15px #03e914, 0 0 25px #03e914, 0 0 100px #03e914 ;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Reflected Text</div>
+</body>
+</html>
+
